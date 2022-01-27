@@ -1,7 +1,20 @@
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    
+    }
+
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
+
+
+
 
 
 .hero-section {
@@ -9,7 +22,7 @@
     justify-content: flex-end;
     background-color: #FEFAF5;
     justify-content: space-between;
-    padding: 1.875rem;
+ 
 
 }
 
@@ -41,24 +54,25 @@
 
 
 .hero-section img{
-    min-width: 20.625rem;
-    max-width: 31.25rem;
-    min-height: 27.5rem;
-    max-height: 28.75rem;
-    padding: 1.25rem;
+    min-width: 30.625rem;
+    max-width: 40.25rem;
+    min-height: 30.5rem;
+    max-height: 31.75rem;
+    padding: 5.125rem;
     
 }
 
 
 .recommendation-cards__title{
     color:#335576;
+    font-weight: 900;
     font-size: 2.0625rem;
 }
 
 
 .recommendation-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 3.125rem;
     text-align: center;
     
@@ -90,9 +104,6 @@
 }
 
 .recommendation-cards__destination1, .recommendation-cards__destination2, .recommendation-cards__destination3{
-position: absolute;
-bottom: 0px;
-right: 16px;
 color: #fff;
 font-size: 2.0625rem;
 font-weight: 600;
@@ -100,19 +111,25 @@ font-weight: 600;
 }
 
 
-/* Hawaii Page */
+/* schedule cards */
 .recommendation-cards__breakfast, .recommendation-cards__lunch, .recommendation-cards__dinner, .recommendation-cards__snorkerling{
     background-color: #FEFAF5;
     font-size: 1.5625rem;
     padding: 20px;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .hawaii{
     background-image: url('../assets/Images/hawaii.jpg');
-    padding: 3.75rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20rem;
     max-width: 100%;
     max-height: 100%;
+    background-position: center;
     
 }
 
@@ -122,14 +139,30 @@ font-weight: 600;
 }
 
 
-/* Iceland Page */
 
+
+/* Iceland Page */
+.iceland{
+    background-image: url('../assets/Images/iceland.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20rem;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+}
 
 
 
 /* Greece PAge */
 
-
-
-
+.greece{
+    background-image: url('../assets/Images/greece.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20rem;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+}
 

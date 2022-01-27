@@ -1,18 +1,29 @@
-@media (max-width: 1280px) {
-  
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+
+
+}
+
+
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 
 .nav-section{
     background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.50rem;
+    position: fixed;
+    margin: auto;
+    width: 100%;
 }
 
 .nav-section__title {
     color: #335576;
-    margin: 1.25rem;
+    margin: rem;
 }
 
 
@@ -20,6 +31,10 @@
     font-size: 1.25rem;
     font-weight: 600;
     display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom:3.125rem;
+    right: 4.375rem;
 }
 
 .nav-section ul {
@@ -40,22 +55,145 @@
 
 
 
-.nav-section__active-page{
-   
+
+.hero-section {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FEFAF5;
+    justify-content: space-between;
+    padding-top: 9.375rem;
+
 }
 
 
+.hero-section__heading{
+    color: #335576;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
 
-.footer{
+.hero-section__description{
+    display: flex;
+    flex-direction: column;
+    margin: 3.125rem;
+    color: #335576;
+    font-size: 1.125rem;
+}
+
+.hero-section__button{
+    border: none;
+    color: #fff;
+    border-radius: 6.25rem;
+    min-width: 13rem;
+    max-width: 90%;
+    background-color: #DB7A4E;
+    padding: .9375rem 1.875rem;
+    font-size: 1.25rem;
+}
+
+
+.hero-section img{
+    min-width: 30.625rem;
+    max-width: 40.25rem;
+    min-height: 30.5rem;
+    max-height: 31.75rem;
+    padding: 5.125rem;
+    
+}
+
+
+.recommendation-cards__title{
+    color:#335576;
+    font-size: 2.0625rem;
+}
+
+
+.recommendation-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3.125rem;
+    text-align: center;
+    
+
+}
+
+.recommendation-cards--card1, .recommendation-cards--card2, .recommendation-cards--card3{
+    
+    min-width: 20.625rem;
+    max-width: 20.875rem;
+    min-height: 27.5rem;
+    max-height: 28.75rem;
+    border: .0625rem solid rgba(0, 0, 0, 0.20);
+    border-radius: .3125rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    background-color: #fff;
+    padding: 0px;
+    margin: 40px;
+    position: relative;
+}
+
+.recommendation-cards__image1, .recommendation-cards__image2, .recommendation-cards__image3{
+    min-width: 20.625rem;
+    max-width: 21.875rem;
+    min-height: 27.5rem;
+    max-height: 28.75rem;
+  
+
+}
+
+.recommendation-cards__destination1, .recommendation-cards__destination2, .recommendation-cards__destination3{
+position: absolute;
+bottom: 0px;
+right: 16px;
+color: #fff;
+font-size: 2.0625rem;
+font-weight: 600;
+
+}
+
+
+/* Hawaii Page */
+.recommendation-cards__breakfast, .recommendation-cards__lunch, .recommendation-cards__dinner, .recommendation-cards__snorkerling{
+    background-color: #FEFAF5;
+    font-size: 1.5625rem;
+
+}
+
+.hawaii{
+    background-image: url('../assets/Images/hawaii.jpg');
+    padding: 10.75rem;
+    max-width: 100%;
+    max-height: 100%;
+    background-position:center
+    
+}
+
+.recommendation-cards span{
+    font-size: 80px;
+    color: #fff;
+}
+
+
+footer{
     display: flex;
     justify-content: space-around;
     color: #335576;
     background-color: #FEFAF5;
     padding-bottom: 3.125rem;
-  margin-top: auto;
+    margin-top: auto;
 
 }
-.hours__title, .contact-us__title, .social__title{
+
+
+.footer ul{
+    list-style-type: none;
+    display: flex;
+
+}
+
+
+
+.footer--hours__title, .footer--contact-us__title, .footer--social__title{
 
     font-size: 2rem;
 }
@@ -69,8 +207,11 @@
 }
 
 
-.social__instagram, .social__facebook, .social__twitter{
+.footer--social__instagram,.footer--social__facebook, .footer--social__twitter{
     min-width: 1rem;
     max-width: 2rem;
     padding: .625rem;
+}
+.contact-us__details{
+
 }
