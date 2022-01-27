@@ -1,0 +1,77 @@
+@media (max-width: 1280px) {
+    body{
+        
+    }
+}
+
+
+.nav-section{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.50rem;
+}
+
+.nav-section__title {
+    color: #335576;
+    margin: 1.25rem;
+}
+
+
+.nav-section__list{
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.nav-section ul {
+    display: flex;
+    list-style-type: none;
+
+
+}
+
+
+.nav-section li a{
+    display: flex;
+    padding: 5px;
+    color: black;
+}
+
+
+
+
+.nav-section__active-page{
+   
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    color: #335576;
+    background-color: #FEFAF5;
+    padding-bottom: 3.125rem;
+}
+
+
+.hours__title, .contact-us__title, .social__title{
+
+    font-size: 2rem;
+}
+
+
+
+.hours__sub-title, .contact-us__sub-title{
+    color: #DB7A4E;
+    font-size: 15px;
+    
+}
+
+
+.social__instagram, .social__facebook, .social__twitter{
+    min-width: 1rem;
+    max-width: 2rem;
+    padding: .625rem;
+}
