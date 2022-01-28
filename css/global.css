@@ -36,11 +36,14 @@ body {
   list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .nav-section li a {
   display: flex;
   padding: 5px;
   color: black;
-  text-decoration: none;
 }
 
 .nav-section__active-page--active{

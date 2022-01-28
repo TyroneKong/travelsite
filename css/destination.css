@@ -11,6 +11,24 @@
   font-weight: 600;
 }
 
+.hero-section__heading{
+    animation-duration: 2s;
+    animation-name: slidingheader;
+}
+
+
+@keyframes slidingheader {
+    from{
+        margin-left:500%;
+        width:200%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
 .hero-section__description {
   display: flex;
   flex-direction: column;
@@ -28,6 +46,10 @@
   background-color: #db7a4e;
   padding: 0.9375rem 1.875rem;
   font-size: 1.25rem;
+}
+
+.hero-section__button:hover{
+    background: #db7b4e4b;
 }
 
 .hero-section--get-started{
@@ -70,6 +92,13 @@
   margin: 20px;
   position: relative;
 }
+
+.recommendation-cards--card1:hover,
+.recommendation-cards--card2:hover,
+.recommendation-cards--card3:hover{
+    transform: translateY(-40px);
+}
+
 
 .recommendation-cards__image1,
 .recommendation-cards__image2,
