@@ -1,15 +1,28 @@
-
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+  }
+  
+  * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   
   .nav-section {
     background-color: #ffffff;
     position: fixed;
-    margin: auto;
+   top: 0;
     width: 100%;
+   margin-top: 0rem;
   }
   
   .nav-section__title {
     color: #335576;
-    margin: 0px 7.5rem;
+   position: relative;
+   left: 100px;
+   top: 0px;
+   display: flex;
   }
   
   .nav-section__list {
@@ -20,6 +33,7 @@
     position: relative;
     bottom: 3.125rem;
     right: 4.375rem;
+
   }
   
   .nav-section ul {
@@ -40,6 +54,17 @@
   .nav-section__active-page--active{
       border-bottom: 5px solid #db7a4e;
   } 
+
+  .nav-section__logo {
+    position: absolute;
+  
+    left: 100px;
+    margin: 0px 7.5rem;
+  }
+
+  .nav-section__link  {
+    color: #335576;
+  }
   
   
   .hero-section {
@@ -193,12 +218,23 @@
   }
   
   .footer--social__instagram,
-  .footer--social__facebook,
   .footer--social__twitter {
+    min-width: 2rem;
+    max-width: 2rem;
+    padding: .3125rem;
+    margin: .3125rem .9375rem;
+  
+  }
+
+  .footer--social__facebook{
     min-width: 1rem;
-    max-width: 1.5rem;
-    padding: 0.625rem;
-    margin: 1.25rem;
+    max-width: 1rem;
+    padding: .3125rem;
+    margin: .3125rem .9375rem;
+  }
+ 
+  .footer--social{
+    margin: 1.5625rem;
   }
   
   .footer--hours__details, .footer--contact-us__details{
@@ -215,7 +251,8 @@
      font-size: 1.25rem;
   }
   
-  .footer--email{
+  .footer--contact-us__email{
       font-size: 1rem;
+      color: #335576;
       
   }

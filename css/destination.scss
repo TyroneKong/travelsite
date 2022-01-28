@@ -1,104 +1,15 @@
-/* 
-hero section colors */
-.hero-section {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #fefaf5;
-  justify-content: space-between;
-  padding-top: 9.375rem;
+@import './variables';
+
+
+@mixin flexbox($direction:flex-end ){
+    display:flex;
+    justify-content:$direction;
+
 }
 
-.hero-section__heading {
-  color: #335576;
-  font-size: 3.5rem;
-  font-weight: 600;
-}
 
-.hero-section__heading {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: slidingheader;
-          animation-name: slidingheader;
-}
 
-@-webkit-keyframes slidingheader {
-  from {
-    margin-left: 500%;
-    width: 200%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@keyframes slidingheader {
-  from {
-    margin-left: 500%;
-    width: 200%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-.hero-section__description {
-  display: flex;
-  flex-direction: column;
-  margin: 3.125rem;
-  color: #335576;
-  font-size: 1.125rem;
-}
-
-.hero-section__button {
-  border: none;
-  color: #fff;
-  border-radius: 6.25rem;
-  min-width: 14rem;
-  max-width: 90%;
-  background-color: #db7a4e;
-  padding: 0.9375rem 1.875rem;
-  font-size: 1.25rem;
-}
-
-.hero-section__button:hover {
-  background: #db7b4e4b;
-}
-
-.hero-section--get-started {
-  margin: 2.8125rem;
-}
-
-.hero-section img {
-  min-width: 30.625rem;
-  max-width: 40.25rem;
-  min-height: 30.5rem;
-  max-height: 31.75rem;
-  padding: 5.125rem;
-}
-
-.recommendation-cards__border {
-  border-bottom: 5px solid black;
-  margin: 10px 20px;
-}
-
-.recommendation-cards__title {
-  color: #335576;
-  font-weight: 900;
-  font-size: 2.0625rem;
-}
-
-.recommendation-cards {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 3.125rem;
-  text-align: center;
-  margin: 5px;
-}
-
-.recommendation-cards--card1,
-.recommendation-cards--card2,
-.recommendation-cards--card3 {
+@mixin cards {
   min-width: 20.625rem;
   max-width: 20.875rem;
   min-height: 27.5rem;
@@ -112,11 +23,131 @@ hero section colors */
   position: relative;
 }
 
+
+
+// destination image
+
+@mixin destinationImage {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20rem;
+  max-width: 100%;
+  max-height: 100%;
+  background-position: center;
+  position: relative;
+  margin: 6.125rem 0.375rem;
+}
+
+
+////////////////////////////////////////////////////////
+
+.hero-section {
+@include flexbox($direction:flex-end);
+
+  background-color: $hero-section--background-color;
+  justify-content: space-between;
+  padding-top: 9.375rem;
+}
+
+.hero-section__heading {
+  color: $heading-font;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+
+
+ .hero-section__heading{
+    animation-duration: 2s;
+    animation-name: slidingheader;
+}
+
+
+@keyframes slidingheader {
+    from{
+        margin-left:500%;
+        width:200%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+} 
+
+
+.hero-section__description {
+  display: flex;
+  flex-direction: column;
+  margin: 3.125rem;
+  color: $hero-description--font;
+  font-size: 1.125rem;
+}
+
+.hero-section__button {
+  border: none;
+  color: #fff;
+  border-radius: 6.25rem;
+  min-width: 14rem;
+  max-width: 90%;
+  background-color:$hero-section-button--background-color;
+  padding: 0.9375rem 1.875rem;
+  font-size: 1.25rem;
+}
+
+.hero-section__button:hover{
+    background: #db7b4e4b;
+}
+
+.hero-section--get-started{
+    margin: 2.8125rem;
+}
+
+.hero-section img {
+  min-width: 30.625rem;
+  max-width: 40.25rem;
+  min-height: 30.5rem;
+  max-height: 31.75rem;
+  padding: 5.125rem;
+}
+
+
+.recommendation-cards__border {
+  border-bottom: 5px solid black;
+  margin: 10px 20px;
+}
+
+
+
+.recommendation-cards__title {
+  color:$heading-font;
+  font-weight: 900;
+  font-size: 2.0625rem;
+}
+
+.recommendation-cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3.125rem;
+  text-align: center;
+  margin: 5px;
+}
+
+
+
+
+.recommendation-cards--card1,
+.recommendation-cards--card2,
+.recommendation-cards--card3 {
+  @include cards();
+
+}
+
 .recommendation-cards--card1:hover,
 .recommendation-cards--card2:hover,
-.recommendation-cards--card3:hover {
-  transform: translateY(-40px);
+.recommendation-cards--card3:hover{
+    transform: translateY(-40px);
 }
+
 
 .recommendation-cards__image1,
 .recommendation-cards__image2,
@@ -125,6 +156,7 @@ hero section colors */
   max-width: 21.875rem;
   min-height: 27.5rem;
   max-height: 28.75rem;
+
 }
 
 .recommendation-cards__destination1,
@@ -149,7 +181,10 @@ hero section colors */
   margin: 20px;
   display: flex;
   justify-content: center;
+
+
 }
+
 
 .recommendation-cards span {
   font-size: 6rem;
@@ -160,41 +195,30 @@ hero section colors */
   margin-top: 1.875rem;
 }
 
-/* hawaii page*/
+
+  /* hawaii page*/
+
 .hawaii {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 20rem;
-  max-width: 100%;
-  max-height: 100%;
-  background-position: center;
-  position: relative;
-  margin: 6.125rem 0.375rem;
+  @include destinationImage();
+
   background-image: url("../assets/Images/hawaii.jpg");
+
 }
+
 
 /* Iceland Page */
 .iceland {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 20rem;
-  max-width: 100%;
-  max-height: 100%;
-  background-position: center;
-  position: relative;
-  margin: 6.125rem 0.375rem;
+  @include destinationImage();
   background-image: url("../assets/Images/iceland.jpg");
+
 }
 
 /* Greece Page */
+
 .greece {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 20rem;
-  max-width: 100%;
-  max-height: 100%;
-  background-position: center;
-  position: relative;
-  margin: 6.125rem 0.375rem;
+  @include destinationImage();
   background-image: url("../assets/Images/greece.jpg");
-}/*# sourceMappingURL=destination.css.map */
+ 
+}
+
+
