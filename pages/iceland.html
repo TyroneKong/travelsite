@@ -16,24 +16,24 @@
 
             <ul class="nav-section__list">
                 <li class="nav-section__logo"><a href="#"></a></li>
-                <li><a href="#"><span class="nav-section__active-page">Home</span></a></li>
-                <li> <a href="#">Hawaii</a></li>
-                <li> <a href="#">Iceland</a></li>
-                <li> <a href="#">Greece</a></li>
+                <li><a href="../index.html"><span class="nav-section__active-page">Home</span></a></li>
+                <li> <a href="./hawaii.html">Hawaii</a></li>
+                <li> <a  class="nav-section__active-page--active" href="./iceland.html">Iceland</a></li>
+                <li> <a href="./greece.html">Greece</a></li>
             </ul>
 
         </nav>
 
     </header>
 
-
     <div class="recommendation-cards iceland">
 
-        <h2 class="recommendation-cards__title"><span>Iceland</span></h2>
+       
+    <h2 class="recommendation-cards__title"><span>Iceland</span></h2>
             
         
             <div class="recommendation-cards--card1">
-                <h2>Friday</h2>
+                <h2  class="recommendation-cards__border">Friday</h2>
                 <p class="recommendation-cards__breakfast">Breakfast</p>
                 <p class="recommendation-cards__lunch">Lunch</p>
                 <p class="recommendation-cards__dinner">Dinner</p>
@@ -41,7 +41,7 @@
             </div>
     
             <div class="recommendation-cards--card2">
-               <h2>Saturday</h2>
+               <h2  class="recommendation-cards__border">Saturday</h2>
                <p class="recommendation-cards__breakfast">Breakfast</p>
                <p class="recommendation-cards__lunch">Lunch</p>
                <p class="recommendation-cards__dinner">Dinner</p>
@@ -49,7 +49,7 @@
             </div>
     
             <div class="recommendation-cards--card3">
-                <h2>Sunday</h2>
+                <h2  class="recommendation-cards__border">Sunday</h2>
                 <p class="recommendation-cards__breakfast">Breakfast</p>
                 <p class="recommendation-cards__lunch">Lunch</p>
                 <p class="recommendation-cards__dinner">Dinner</p>
@@ -60,50 +60,51 @@
     </section>
     
     
+
     <footer class="footer">
         <!-- main footer -->
         <div class="footer--contact-us">
-           <!-- footer contact -->
-                <h3 class="footer--contact-us__title">Contact</h3>
-            <ul>
-            <li class="contact-us__sub-title">EMAIL</li>
-            <li class="contact-us__details">info@travelsite.com</li>
-            </ul>
-            
+            <!-- footer contact -->
+            <h3 class="footer--contact-us__title">Contact</h3>
+            <p class="footer--contact-us__details">EMAIL</p>
+
+            <p>info@travelsite.com</p>
+
+            <!-- <li class="contact-us__details">info@travelsite.com</li> -->
         </div>
 
         <div class="footer--hours">
             <!-- footer hours -->
-            <h3 class=" footer--hours__title">Hours</h3>
-            <ul>
-                <li class="hours__sub-title">MONDAY - FRIDAY</li>
-                <li class="hours__details">9:00 AM - 5:00 PM</li>
-                <li class="hours__sub-title">SATURDAY</li>
-                <li class="hours__details">10:00 AM - 4:00 PM</li>
-                <li class="hours__sub-title">SUNDAY</li>
-                <li>Closed</li>
-            </ul>
+            <h3 class="footer--hours__title">Hours</h3>
+            <p class="footer--hours__details">MONDAY - FRIDAY</p>
+
+            <p class="footer--hours__details">SATURDAY</p>
+            <p class="footer--hours__details">SUNDAY</p>
+            <div class="footer--hours__times">
+
+                <p>9:00 AM - 5:00 PM</p>
+                <p>10:00 AM - 4:00 PM</p>
+                <p>Closed</p>
+            </div>
         </div>
+
+
+
         <div class="footer--social">
             <!-- footer social -->
             <h3 class="footer--social__title">Social</h3>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img class="footer--social__instagram" src="../assets/Icons/icon-instagram.png" alt="instagram icon" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img class="footer--social__facebook" src="../assets/Icons/icon-facebook.png" alt="facebook icon" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img class="footer--social__twitter" src="../assets/Icons/icon-twitter.png" alt="twitter icon" />
-                    </a>
-                </li>
-            </ul>
+
+            <a href="#">
+                <img class="footer--social__instagram" src="../assets/Icons/icon-instagram.png" alt="instagram icon" />
+            </a>
+
+            <a href="#">
+                <img class="footer--social__facebook" src="../assets/Icons/icon-facebook.png" alt="facebook icon" />
+            </a>
+
+            <a href="#">
+                <img class="footer--social__twitter" src="../assets/Icons/icon-twitter.png" alt="twitter icon" />
+            </a>
         </div>
     </footer>
     

@@ -20,11 +20,11 @@
             <ul class="nav-section__list">
                 <li class="nav-section__logo"><a href="#"></a></li>
                 <li>
-                    <a href="#"><span class="nav-section__active-page">Home</span></a>
+                    <a class="nav-section__active-page--active" href="#"><span>Home</span></a>
                 </li>
-                <li><a href="#">Hawaii</a></li>
-                <li><a href="#">Iceland</a></li>
-                <li><a href="#">Greece</a></li>
+                <li><a href="./pages/hawaii.html">Hawaii</a></li>
+                <li><a href="./pages/iceland.html">Iceland</a></li>
+                <li><a href="./pages/greece.html">Greece</a></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +40,7 @@
                     Dont let your dreams be just dreams. Experience the world by booking
                     a vaction with us now.
                 </p>
-                <div>
+                <div class="hero-section--get-started">
                     <button class="hero-section__button">Get started</button>
                 </div>
             </div>
@@ -49,81 +49,76 @@
         </div>
     </section>
 
-    <section  class="recommendation-cards-section">
+    <section class="recommendation-cards-section">
         <!-- recommendation card section -->
         <h2 class="recommendation-cards__title">Recommendations</h2>
         <div class="recommendation-cards">
             <div class="recommendation-cards--card1">
-                <a href="#"><img class="recommendation-cards__image1" src="./assets/Images/hawaii.jpg"
+                <a href="./pages/hawaii.html"><img class="recommendation-cards__image1" src="./assets/Images/hawaii.jpg"
                         alt="image of hawaii" /></a>
                 <p class="recommendation-cards__destination1">Hawaii</p>
             </div>
 
             <div class="recommendation-cards--card2">
-                <a href=""><img class="recommendation-cards__image2" src="./assets/Images/iceland.jpg"
+                <a href="./pages/iceland.html"><img class="recommendation-cards__image2" src="./assets/Images/iceland.jpg"
                         alt="image of iceland" /></a>
                 <p class="recommendation-cards__destination2">Iceland</p>
             </div>
 
             <div class="recommendation-cards--card3">
-                <a href=""><img class="recommendation-cards__image3" src="./assets/Images/greece.jpg"
+                <a href="./pages/greece.html"><img class="recommendation-cards__image3" src="./assets/Images/greece.jpg"
                         alt="image of greece" /></a>
                 <p class="recommendation-cards__destination3">Greece</p>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <!-- main footer -->
+        <div class="footer--contact-us">
+            <!-- footer contact -->
+            <h3 class="footer--contact-us__title">Contact</h3>
+            <p class="footer--contact-us__details">EMAIL</p>
 
+            <p>info@travelsite.com</p>
 
-        <footer class="footer">
-            <!-- main footer -->
-            <div class="footer--contact-us">
-               <!-- footer contact -->
-                    <h3 class="footer--contact-us__title">Contact</h3>
-                <ul>
-                <li class="contact-us__sub-title">EMAIL</li>
-                <li class="contact-us__details">info@travelsite.com</li>
-                </ul>
-                
+            <!-- <li class="contact-us__details">info@travelsite.com</li> -->
+        </div>
+
+        <div class="footer--hours">
+            <!-- footer hours -->
+            <h3 class="footer--hours__title">Hours</h3>
+            <p class="footer--hours__details">MONDAY - FRIDAY</p>
+
+            <p class="footer--hours__details">SATURDAY</p>
+            <p class="footer--hours__details">SUNDAY</p>
+            <div class="footer--hours__times">
+
+                <p>9:00 AM - 5:00 PM</p>
+                <p>10:00 AM - 4:00 PM</p>
+                <p>Closed</p>
             </div>
-    
-            <div class="footer--hours">
-                <!-- footer hours -->
-                <h3 class=" footer--hours__title">Hours</h3>
-                <ul>
-                    <li class="hours__sub-title">MONDAY - FRIDAY</li>
-                    <li class="hours__details">9:00 AM - 5:00 PM</li>
-                    <li class="hours__sub-title">SATURDAY</li>
-                    <li class="hours__details">10:00 AM - 4:00 PM</li>
-                    <li class="hours__sub-title">SUNDAY</li>
-                    <li>Closed</li>
-                </ul>
-            </div>
-            <div class="footer--social">
-                <!-- footer social -->
-                <h3 class="footer--social__title">Social</h3>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img class="footer--social__instagram" src="./assets/Icons/icon-instagram.png" alt="instagram icon" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="footer--social__facebook" src="./assets/Icons/icon-facebook.png" alt="facebook icon" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="footer--social__twitter" src="./assets/Icons/icon-twitter.png" alt="twitter icon" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+        </div>
 
 
 
+        <div class="footer--social">
+            <!-- footer social -->
+            <h3 class="footer--social__title">Social</h3>
+
+            <a href="#">
+                <img class="footer--social__instagram" src="../assets/Icons/icon-instagram.png" alt="instagram icon" />
+            </a>
+
+            <a href="#">
+                <img class="footer--social__facebook" src="../assets/Icons/icon-facebook.png" alt="facebook icon" />
+            </a>
+
+            <a href="#">
+                <img class="footer--social__twitter" src="../assets/Icons/icon-twitter.png" alt="twitter icon" />
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
