@@ -11,7 +11,12 @@
   font-weight: 600;
 }
 
-.hero-section__heading{
+
+
+
+
+
+/* .hero-section__heading{
     animation-duration: 2s;
     animation-name: slidingheader;
 }
@@ -26,7 +31,7 @@
         margin-left: 0%;
         width: 100%;
     }
-}
+} */
 
 
 .hero-section__description {
