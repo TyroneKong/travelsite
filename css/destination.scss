@@ -10,9 +10,9 @@
 
 
 @mixin cards {
-  min-width: 20.625rem;
-  max-width: 20.875rem;
-  min-height: 27.5rem;
+  min-width: 22.625rem;
+  max-width: 23.875rem;
+  min-height: 30.5rem;
   max-height: 28.75rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3125rem;
@@ -110,6 +110,11 @@
   padding: 5.125rem;
 }
 
+// .recommendation-cards{
+//   display: flex;
+
+
+// }
 
 .recommendation-cards__border {
   border-bottom: 5px solid black;

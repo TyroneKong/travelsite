@@ -99,9 +99,9 @@ hero section colors */
 .recommendation-cards--card1,
 .recommendation-cards--card2,
 .recommendation-cards--card3 {
-  min-width: 20.625rem;
-  max-width: 20.875rem;
-  min-height: 27.5rem;
+  min-width: 22.625rem;
+  max-width: 23.875rem;
+  min-height: 30.5rem;
   max-height: 28.75rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3125rem;
