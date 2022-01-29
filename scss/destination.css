@@ -15,8 +15,8 @@ hero section colors */
 }
 
 .hero-section__heading {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: slidingheader;
           animation-name: slidingheader;
 }
@@ -93,7 +93,7 @@ hero section colors */
   justify-content: space-evenly;
   padding: 3.125rem;
   text-align: center;
-  margin: 5px;
+  margin: 0.3125rem;
 }
 
 .recommendation-cards--card1,
@@ -105,10 +105,9 @@ hero section colors */
   max-height: 28.75rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3125rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  padding: 0px;
-  margin: 360px 0;
+  margin: 22.5rem 0;
   position: relative;
 }
 
@@ -131,8 +130,7 @@ hero section colors */
 .recommendation-cards__destination2,
 .recommendation-cards__destination3 {
   position: absolute;
-  bottom: 0px;
-  right: 16px;
+  right: 1rem;
   color: #fff;
   font-size: 2.0625rem;
   font-weight: 600;
@@ -145,8 +143,8 @@ hero section colors */
 .recommendation-cards__snorkerling {
   background-color: #fefaf5;
   font-size: 1.5625rem;
-  padding: 20px;
-  margin: 20px;
+  padding: 1.25rem;
+  margin: 1.25rem;
   display: flex;
   justify-content: center;
 }

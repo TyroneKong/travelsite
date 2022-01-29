@@ -1,0 +1,246 @@
+@mixin recommendation-cards {
+  min-width: 22.625rem;
+  max-width: 23.875rem;
+  min-height: 30.5rem;
+  max-height: 28.75rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 2.5rem;
+  position: relative;
+}
+
+@mixin recommendation-cards-image {
+  min-width: 22.625rem;
+  max-width: 23.875rem;
+  min-height: 32.5rem;
+  max-height: 28.75rem;
+}
+
+@mixin recommendation-cards-destination {
+  position: absolute;
+  bottom: 0px;
+  right: 1rem;
+  color: #fff;
+  font-size: 2.0625rem;
+  font-weight: 600;
+}
+
+.nav-section {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 0rem;
+}
+
+.nav-section__title {
+  color: #335576;
+  display: flex;
+  left: 3.125rem;
+  top: 0px;
+  font-size: 1.5625rem;
+  display: flex;
+}
+
+.nav-section__list {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 1.125rem;
+  right: 4.375rem;
+}
+
+.nav-section ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-section li a {
+  display: flex;
+  padding: 5px;
+  color: black;
+}
+
+.nav-section a {
+  background: radial-gradient(transparent 50%, rgba(235, 126, 64, 0.5))
+    center/200% 200% no-repeat;
+  transition: 0.5s;
+}
+
+.nav-section a:hover {
+  background-size: 100% 100%;
+}
+
+.nav-section__active-page--active {
+  border-bottom: 5px solid #db7a4e;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fefaf5;
+  justify-content: space-between;
+  padding-top: 9.375rem;
+}
+
+.hero-section__heading {
+  color: #335576;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.hero-section__description {
+  display: flex;
+  flex-direction: column;
+  margin: 3.125rem;
+  color: #335576;
+  font-size: 1.125rem;
+}
+
+.hero-section__button {
+  border: none;
+  color: #fff;
+  border-radius: 6.25rem;
+  min-width: 13rem;
+  max-width: 90%;
+  background-color: #db7a4e;
+  padding: 0.9375rem 1.875rem;
+  font-size: 1.25rem;
+}
+
+.hero-section img {
+  min-width: 30.625rem;
+  max-width: 40.25rem;
+  min-height: 30.5rem;
+  max-height: 31.75rem;
+  padding: 5.125rem;
+}
+
+.recommendation-cards__border {
+  border-bottom: 0.3125rem solid black;
+  margin: 0.625rem 1.25rem;
+}
+
+.recommendation-cards__title {
+  color: #335576;
+  font-size: 2.0625rem;
+}
+
+.recommendation-cards {
+  position: relative;
+  top: 18.75rem;
+  padding: 3.125rem;
+  text-align: center;
+  margin: 0.3125rem;
+}
+
+.recommendation-cards__title-index {
+  color: #335576;
+  font-size: 2.0625rem;
+  position: absolute;
+  bottom: 56.25rem;
+}
+
+.recommendation-cards--card1,
+.recommendation-cards--card2,
+.recommendation-cards--card3 {
+  @include recommendation-cards();
+}
+
+.recommendation-cards__image1,
+.recommendation-cards__image2,
+.recommendation-cards__image3 {
+  @include recommendation-cards-image();
+}
+
+.recommendation-cards__destination1,
+.recommendation-cards__destination2,
+.recommendation-cards__destination3 {
+  @include recommendation-cards-destination();
+}
+
+/* Hawaii Page */
+.recommendation-cards__breakfast,
+.recommendation-cards__lunch,
+.recommendation-cards__dinner,
+.recommendation-cards__snorkerling {
+  background-color: #fefaf5;
+  font-size: 1.5625rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: #335576;
+  background-color: #fefaf5;
+  margin-top: 455px;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.footer--hours__title,
+.footer--contact-us__title,
+.footer--social__title {
+  font-size: 2.1rem;
+  padding: 0px;
+  margin: 1.875rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hours__sub-title,
+.contact-us__sub-title {
+  color: #db7a4e;
+  font-size: 1.25rem;
+  margin: 1.875rem;
+}
+
+.footer--social__instagram,
+.footer--social__twitter {
+  min-width: 2rem;
+  max-width: 2rem;
+  padding: 0.3125rem;
+  margin: 0.3125rem 0.9375rem;
+}
+
+.footer--social__facebook {
+  min-width: 1rem;
+  max-width: 1rem;
+  padding: 0.3125rem;
+  margin: 0.3125rem 0.9375rem;
+}
+
+.footer--social {
+  margin: 1.5625rem;
+}
+
+.footer--hours__details,
+.footer--contact-us__details {
+  color: #db7a4e;
+  display: inline-flex;
+  margin: 0.9375rem 3.375rem;
+  font-size: 1rem;
+}
+
+.footer--hours__times,
+p {
+  display: flex;
+  margin: 0rem 1.6875rem;
+  font-size: 1.25rem;
+}
+
+.footer--contact-us__email {
+  font-size: 1rem;
+  color: #335576;
+}
