@@ -1,5 +1,3 @@
-@import './variables';
-
 
 @mixin flexbox($direction:flex-end ){
     display:flex;
@@ -58,7 +56,7 @@
 
 
  .hero-section__heading{
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slidingheader;
 }
 
