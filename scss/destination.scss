@@ -21,6 +21,7 @@
   background-color: #fff;
   margin: 22.5rem 0;
   position: relative;
+  
 }
 
 
@@ -63,6 +64,8 @@
   margin: 1.25rem;
   display: flex;
   justify-content: center;
+  position: relative;
+  left: -20px;
 }
 
 ////////////////////////////////////////////////////////
@@ -140,6 +143,11 @@
 .recommendation-cards__border {
   border-bottom: 5px solid black;
   margin: 10px 20px;
+  font-size: 30px;
+  list-style-type: none;
+  position: relative;
+  left: -1.25rem;
+  font-weight: 900;
 }
 
 
